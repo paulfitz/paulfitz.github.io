@@ -4,7 +4,9 @@ layout: default
 ---
 
 {% for post in site.posts %}
+<div class="front-post">
 <h2 class="front"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }} ({{post.date | date: "%B %Y"}})</a></h3>
 {{ post.content }}
+</div>
 {% endfor %}
 

@@ -223,3 +223,14 @@ p.show100 {
   font-style: italic;
   color: #888;
 }
+
+.front-post { 
+  padding-bottom: 2em;
+}
+
+
+p.scale-image img {
+  max-width: 700px;
+  width: 100%;
+}
+

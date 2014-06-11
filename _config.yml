@@ -1,3 +1,3 @@
 name: Paul Fitzpatrick
-markdown: redcarpet
+markdown: kramdown
 pygments: true

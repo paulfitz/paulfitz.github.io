@@ -15,18 +15,18 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 { 
+h1, h2, h3, h4, h5, h6, .upper { 
   font-family: 'Droid Serif'; 
   font-style: normal; 
   font-weight: normal; 
 }
 
-h1, h2 {
+h1, h2, .upper {
   font-size: 1.2em;
   line-height: 1em;
 }
 
-h1 {
+h1, .upper {
   display: block;
   text-align: center;
   background: black;
@@ -38,7 +38,7 @@ h1 {
   margin: 0;
 }
 
-h2.front {
+h2.front, h2.post {
   display: block;
   text-align: center;
   background: #080;
@@ -48,6 +48,10 @@ h2.front {
   box-shadow: 0 0 5px #888;
   padding: 1em;
   margin: 0;
+}
+
+h2.post {
+  margin-bottom: 2em;
 }
 
 h2 {
@@ -65,7 +69,7 @@ h2 {
 
 #header {
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   color: #fff;
 }
 
@@ -94,6 +98,14 @@ ul.index, ul.menu {
   list-style-type: none;
   padding: 0px;
   margin: 0px; 
+}
+
+ul.main-menu { 
+  text-align: center;
+  background: #eee;
+  border-left: 1px solid #888;
+  border-right: 1px solid #888;
+  padding-top: 5px;
 }
 
 ul.index li {
@@ -141,7 +153,7 @@ ul.menu li a:hover {
   color: #fff !important;
 }
 
-h2 a { 
+h2 a, .upper a { 
   color: #fff !important;
 }
 

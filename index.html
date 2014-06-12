@@ -3,9 +3,18 @@ title: Paul Fitzpatrick
 layout: default
 ---
 
+<ul class="menu main-menu">
+<li><a href="https://twitter.com/fitzyfitzyfitzy">twitter</a></li>
+<li><a href="https://github.com/paulfitz">github</a></li>
+<li><a href="https://paulfitz.github.io/rss.xml">rss</a></li>
+</ul>
+
 {% for post in site.posts %}
 <div class="front-post">
-<h2 class="front"><a href="{{ post.url }}">{{ post.title }}<span class="post-date">({{post.date | date: "%B %Y"}})</span></a></h3>
+  {% unless forloop.first %}
+  <div class="upper"><a href="{{ post.url }}">{{post.date | date: "%d %B %Y"}}</a></div>
+  {% endunless %}
+<h2 class="front"><a href="{{ post.url }}">{{ post.title }}{% if forloop.first %}<span class="post-date">({{post.date | date: "%d %B %Y"}})</span>{% endif %}</a></h3>
 {{ post.content }}
 </div>
 {% endfor %}

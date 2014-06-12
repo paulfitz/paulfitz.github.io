@@ -29,8 +29,8 @@ h1, h2, .upper {
 h1, .upper {
   display: block;
   text-align: center;
-  background: black;
-  text-shadow: 0 0 5px #080;
+  background: #ffa500;
+  text-shadow: 0 0 5px #000;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   box-shadow: 0 0 5px #888;
@@ -103,8 +103,8 @@ ul.index, ul.menu {
 ul.main-menu { 
   text-align: center;
   background: #eee;
-  border-left: 1px solid #888;
-  border-right: 1px solid #888;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
   padding-top: 5px;
 }
 
@@ -118,7 +118,7 @@ ul.index li a {
   margin: 5px;
   border-radius: 5px;
   color: white;
-  background: #040;
+  background: #000;
 }
 
 ul.index li a.draft {
@@ -142,11 +142,11 @@ ul.menu li a {
   margin-bottom: 5px;
   border-radius: 5px;
   color: white;
-  background: #040;
+  background: #000;
 }
 
 ul.menu li a:hover {
-  background: #000;
+  background: #040;
 }
 
 #header a {

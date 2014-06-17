@@ -9,6 +9,7 @@ html, body {
   font-size: 13px;
   line-height: 1.5em;
   letter-spacing: 0px;
+  height: 100%;
 }
 
 a {
@@ -63,6 +64,7 @@ h2 {
   padding-right: 10px;
   margin-top: 0;
   padding-top: 0;
+  min-height: 100%;
 }
 
 #header {
@@ -281,9 +283,17 @@ p.scale-image img {
 #tail {
   margin-top: 2em;
   padding-top: 40px;
-  height: 100px;
+  padding-bottom: 40px;
   background: #aaa;
   text-align: center;
+}
+
+#tail ul.menu li a {
+  background: #777;
+}
+
+
+#tail p {
   font-size: 200%;
   color: #fff;
 }

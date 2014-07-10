@@ -301,3 +301,9 @@ p.scale-image img {
 #tail a {
   color: #fff;
 }
+
+pre { 
+  background: #cfc;
+  padding: 10px;
+  border-radius: 10px;
+}

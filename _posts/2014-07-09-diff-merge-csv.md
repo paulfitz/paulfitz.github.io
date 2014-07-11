@@ -28,9 +28,10 @@ $ npm install daff -g
 $ daff git csv
 ~~~
 
-Actually, that second command will only tell you how to get things set up,
+<del>Actually, that second command will only tell you how to get things set up,
 it won't do it for you automatically (yet).  I'm a little nervous about
-mucking up people's git settings.
+mucking up people's git settings.</del> The command now does all the
+setup work for you, very carefully (run `daff git` for details).
 
 Once that is installed, you'll get nice diffs produced by the same
 library James used for his github plugin, and you'll get nice merges

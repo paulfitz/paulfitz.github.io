@@ -256,6 +256,14 @@ p.show100 {
   padding-bottom: 4em;
 }
 
+p.figure, p.scale-image { 
+  text-align: center;
+}
+
+p.figure img, p.max-image img, p.scale-image img {
+  box-shadow: 5px 5px 2px #888;
+}
+
 p.max-image img {
   width: 100%;
 }
@@ -307,3 +315,4 @@ pre {
   padding: 10px;
   border-radius: 10px;
 }
+

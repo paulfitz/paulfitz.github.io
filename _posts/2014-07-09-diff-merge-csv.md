@@ -17,8 +17,6 @@ For diffs, James Smith [has a great explanation](http://theodi.org/blog/adapting
 he proposes a custom git diff driver that understands CSV structure.
 On the server side, he shows how to tweak gitlab or ([via a plugin called CSVHub](http://theodi.org/blog/csvhub-github-diffs-for-csv-files)) github to get pretty diffs using the [daff library](https://github.com/paulfitz/daff).
 
-![git hearts csv?](/images/git-hearts-csv.gif)
-
 For merges, on the client side, the [coopy library](http://share.find.coop) has 
 for some time provided a similar [merge driver](http://share.find.coop/doc/tutorial_git.html) to let git understand and use CSV structure.  As of today,
 `daff` can do the same, and it is much easier to install.
@@ -28,14 +26,13 @@ $ npm install daff -g
 $ daff git csv
 ~~~
 
-<del>Actually, that second command will only tell you how to get things set up,
-it won't do it for you automatically (yet).  I'm a little nervous about
-mucking up people's git settings.</del> The command now does all the
-setup work for you, very carefully (run `daff git` for details).
-
 Once that is installed, you'll get nice diffs produced by the same
-library James used for his github plugin, and you'll get nice merges
-too.  Let's look at an example.
+library James used for his github plugin:
+
+{:.figure}
+![Random diff](/images/random_diff.png)
+
+And you'll get nice merges too.  Let's look at an example.
 
 Suppose we have this table stored in `digi.csv`:
 

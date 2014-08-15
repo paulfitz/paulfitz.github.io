@@ -29,7 +29,7 @@ $ daff git csv
 Once that is installed, you'll get nice diffs produced by the same
 library James used for his github plugin:
 
-{:.figure}
+{:.figure .fig509}
 ![Random diff](/images/random_diff.png)
 
 And you'll get nice merges too.  Let's look at an example.

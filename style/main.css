@@ -324,3 +324,17 @@ pre {
 .datey { 
   color: #0a0;
 }
+
+ul ul li { 
+  list-style: none;
+}
+
+ul ul li { 
+  color: #666;
+  padding: 4px;
+  border-left: 1px solid #888;
+}
+
+ul li { 
+  padding-bottom: 1em;
+}

@@ -30,7 +30,7 @@ h1, h2, .upper {
 h1, .upper {
   display: block;
   text-align: center;
-  background: #ffa500;
+  background: #040;
   text-shadow: 0 0 5px #000;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
@@ -42,7 +42,6 @@ h2.front, h2.post {
   display: block;
   text-align: center;
   background: #080;
-  text-shadow: 0 0 3px #000;
   border-bottom-left-radius: 1em;
   border-bottom-right-radius: 1em;
   padding: 1em;
@@ -55,6 +54,11 @@ h2.post {
 
 h2 {
   font-size: 1.1em;
+}
+
+h3 { 
+  margin: 0;
+  padding: 0;
 }
 
 #wrapper {
@@ -321,10 +325,6 @@ pre {
   overflow: auto;
 }
 
-.datey { 
-  color: #0a0;
-}
-
 ul ul li { 
   list-style: none;
 }
@@ -337,4 +337,14 @@ ul ul li {
 
 ul li { 
   padding-bottom: 1em;
+}
+
+ul.index li { 
+  padding-bottom: 0.1em;
+}
+
+div.post { 
+  margin-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
 }

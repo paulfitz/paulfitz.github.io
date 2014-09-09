@@ -4,5 +4,15 @@ layout: default
 
 <h2 class="post"><a href="/">{{page.date | date: "%d %B %Y"}}</a></h2>
 
+<div class="post">
 {{content}}
+</div>
 
+
+<ul class="index">
+  {% for post in site.posts %}
+    <li>
+  <h3><a href="{{site.baseurl}}{{ post.url }}"><b>{{ post.title }}</b>, {{ post.date | date: "%B %Y" }}</a></h3>
+    </li>
+  {% endfor %}
+</ul>

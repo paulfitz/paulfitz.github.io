@@ -3,14 +3,20 @@ title: Paul Fitzpatrick
 layout: default
 ---
 
+<h2 class="front post"><a href="/">Don't feel bad if you called me Patrick or Fitzgerald</a></h2>
+
+<div class="post front-post">
+I need hardly tell you that this is a blog. It has my name on it, and
+there are dates, the blog-spoor are everywhere.
+</div>
 
 {% for post in site.posts %}
 <div class="front-post">
-  {% unless forloop.first %}
   <div class="upper"><a href="{{ post.url }}">{{post.date | date: "%d %B %Y"}}</a></div>
-  {% endunless %}
-<h2 class="front"><a href="{{ post.url }}">{% if forloop.first %}<span class="datey">/ {{post.date | date: "%B %Y"}} / </span>{% endif %}{{ post.title }}</a></h3>
+<h2 class="front post"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <div class="post">
 {{ post.content }}
+  </div>
 </div>
 {% endfor %}
 

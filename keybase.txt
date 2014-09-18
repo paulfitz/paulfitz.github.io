@@ -1,0 +1,67 @@
+---
+---
+==================================================================
+https://keybase.io/paulfitz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://paulfitz.github.io
+  * I am paulfitz (https://keybase.io/paulfitz) on keybase.
+  * I have a public key with fingerprint DEA2 1C97 8939 1A36 6DD5  1B72 B4C5 C07A 4B93 4256
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "dea21c9789391a366dd51b72b4c5c07a4b934256",
+            "host": "keybase.io",
+            "key_id": "b4c5c07a4b934256",
+            "uid": "2b06a13cd1e13f68b579e03119c7a200",
+            "username": "paulfitz"
+        },
+        "service": {
+            "hostname": "paulfitz.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1411004305,
+    "expire_in": 157680000,
+    "prev": "ca85746ee5fc5b72542bf69d855c29d18c984a977cd4c2a76f0f3aa6dcd0f65a",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.0.3
+Comment: https://keybase.io/crypto
+
+yMHpAnicbVFdSBRRGF1X3XJR8kGJpM0aQlI2nf+fRTKWtHpQrBQRq+XOzJ3diza7
+zcxarisLoUkWaC9FKdpDUaDUg6kEhlsZQvaiD4VblA9loD6UYWlmNWP1Et2Xyz3f
+Oec73/3GM5JtziSSWnUcrcw/nDQZXwnbqnK4y82YGJSbME8zVg83LgWpfqiFNKQa
+mAeTISAJSeB4gRIIQLGsLDOEyJEiLTESzgFaFCiaZFjMjQWCuqUwbUSgw0IUNDHz
+4UOyif6HH94okCLOAoKSZAISlMLyIsMJEKcIQpA4QOK4RdShpoJT0GSHQLhBQUYE
+a3FjJtqIJGhltlr/wyj0IyMQFn/HCGlBIygFG8x6wDBCusfSG00hS3AGir4/Vj4R
+qbI5vqlohJqOgirmIUymZCDLm6AJAsdpCmfcGDwbQhr0IYvBcCyPm8fqAxtNSwnw
+DEezEDKKxJifxdCkqLCCzDOMRAoywUsCTwOB4ySZlkjAsQquUACwsiTjCssAzBru
+tBrEPLQZE/hNSx35VWCENYi1PI4fT7ElOW2OVLu1QJszLfPvWqmMTevbcirs1en2
+Mbu9Nz8Uved/oQ1/SMQ+uw6NJrQb02PZA1/6ewamPvL7Yr48Dj1fmJuMd7bWzyfz
+WwvoKyPTreu9ge1ZT3eqQ7OnXx/YMh+4fjd/pqPp2k9fJNHufVZ0IuXHQvFEd0e3
+I7q4HMnde24qZX/CtTRyqVMfLZst+qrGHsSPvVop2dP1Pe9I5rKzvNRb0z6x63z6
+1MM25WThYv+jN+ODw3fS17r8/t097yOOQVdH/P7V8tqbBy+8S60MuKNDI3PFn6b1
+qovd3orc/ltvI7G2krqC6jrga/PCumh235O15ZnEy7lWJNTM3E7bXDrM9WV+c9WW
+oayl1R2lvwDnphRZ
+=OUgh
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/paulfitz
+
+==================================================================

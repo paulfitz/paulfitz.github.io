@@ -5,11 +5,11 @@ html, body {
   margin: 0;
   padding: 0;
   background: white;
-  font-family: Georgia, Arial, sans-serif;
-  font-size: 13px;
   line-height: 1.5em;
   letter-spacing: 0px;
   height: 100%;
+  font-size: 15pt;
+  font-family: 'Alegreya', serif;
 }
 
 a {
@@ -17,7 +17,6 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6, .upper { 
-  font-family: 'Droid Serif'; 
   font-style: normal; 
   font-weight: normal; 
 }
@@ -25,6 +24,10 @@ h1, h2, h3, h4, h5, h6, .upper {
 h1, h2, .upper {
   font-size: 1.2em;
   line-height: 1em;
+}
+
+.upper { 
+  font-size: 0.7em;
 }
 
 h1, .upper {
@@ -41,14 +44,24 @@ h1, .upper {
 h2.front, h2.post {
   display: block;
   text-align: center;
-  background: #080;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
+  background: #000;
   padding: 1em;
   margin: 0;
 }
 
-h2.post {
+.tail { 
+  background-image: url(/images/black.png);
+  background-size: 100% 100%;
+}
+
+.tail div { 
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  background-color: #fff;
+  height: 1em;
+}
+
+.tail {
   margin-bottom: 2em;
 }
 
@@ -257,7 +270,7 @@ p.show100 {
 }
 
 .front-post { 
-  padding-bottom: 4em;
+  padding-bottom: 1em;
 }
 
 p.figure, p.scale-image { 
@@ -347,4 +360,15 @@ div.post {
   margin-bottom: 2em;
   padding-left: 1em;
   padding-right: 1em;
+}
+
+
+.top {
+  font-size: 150%;
+}
+
+#header h1 { 
+  background-color: black;
+  background-image: url(/images/space.jpg);
+  background-repeat: repeat;
 }

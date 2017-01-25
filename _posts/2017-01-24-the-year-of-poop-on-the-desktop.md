@@ -5,7 +5,7 @@ title: the year of poop on the desktop
 
 So last month an idea surfaced from [@j4mie](https://twitter.com/j4mie])
 for an alternative data format: poop separated values (PSV).  Here's the
-complete spec.
+<a href='https://twitter.com/j4mie/status/804701143171497984'>complete spec</a>.
 
 {: .max-image}
 ![PSV Spec](/images/psv_spec.png)

@@ -372,3 +372,8 @@ div.post {
   background-image: url(/images/space.jpg);
   background-repeat: repeat;
 }
+
+.ctable {
+  overflow: scroll;
+  white-space: pre;
+}

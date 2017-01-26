@@ -3,6 +3,41 @@ layout: post
 title: the year of poop on the desktop
 ---
 
+<table width="100%">
+<tr>
+<td><h2>CSV</h2><textarea id="table_csv" class="ctable"></textarea></td>
+<td><h2>PSV</h2><textarea id="table_poop" class="ctable"></textarea></td>
+</tr>
+</table>
+
+<script>
+$(function() {
+  var txt = "IDEA,VALUE,IMPLEMENTED\nsave earth,high,no\nfight tyranny,high,no\npoop csv,low,HECK YES\n";
+
+  var delim = String.fromCharCode(0xD83D, 0xDCA9);
+  var csv_poop = new daff.Csv(delim);
+  var csv = new daff.Csv();
+  var update = true;
+  $('#table_poop').keyup(function() {
+     if (update) {
+       update = false;
+       $('#table_csv').val(csv.renderTable(csv_poop.makeTable($('#table_poop').val())));
+       update = true;
+     }
+  });
+  $('#table_csv').keyup(function() {
+     if (update) {
+       update = false;
+       $('#table_poop').val(csv_poop.renderTable(csv.makeTable($('#table_csv').val())));
+       update = true;
+     }
+  });
+  $('#table_csv').val(txt);
+  $('#table_csv').trigger('keyup');
+  $('#table_poop').trigger('keyup');
+});
+</script>
+
 So last month an idea surfaced from [@j4mie](https://twitter.com/j4mie])
 for an alternative data format: poop separated values (PSV).  Here's the
 <a href='https://twitter.com/j4mie/status/804701143171497984'>complete spec</a>.

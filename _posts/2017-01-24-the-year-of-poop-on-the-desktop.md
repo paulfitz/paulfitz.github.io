@@ -11,6 +11,7 @@ title: the year of poop on the desktop
 </table>
 
 <script>
+$.mobile.ignoreContentEnabled=true;
 $(function() {
   var txt = "IDEA,VALUE,IMPLEMENTED\nsave earth,high,no\nfight tyranny,high,no\npoop csv,low,HECK YES\n";
 

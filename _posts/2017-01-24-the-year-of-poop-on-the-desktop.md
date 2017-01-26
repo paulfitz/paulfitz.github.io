@@ -107,12 +107,12 @@ There aren't a lot of programs supporting PSV yet.  So far as I know,
 <a href='https://github.com/paulfitz/daff'>`daff`</a> is the first.
 The purpose of `daff` is making tabular diffs and helping with
 version control of data, but until format converters crop up you
-can use it to convert to an from psv as follows:
+can use it to convert to and from psv as follows:
 
 ```
-pip install daff
+pip install daff           # or npm install daff -g
 daff copy foo.csv foo.psv  # convert csv -> psv
 daff copy foo.psv foo.csv  # convert psv -> csv
 ```
 
-
+Or you can write into the text boxes at the start of this post :-).

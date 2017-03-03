@@ -1,0 +1,12 @@
+---
+title: Pikesley As A Service
+layout: sparse
+---
+
+<span id="potd"></span>
+
+<script>
+var pikesleys = {{ site.data.pikes | jsonify }};  // pikesleies?
+var index = Math.floor(Math.random() * pikesleys.length);
+document.getElementById("potd").innerHTML = pikesleys[index];
+</script>

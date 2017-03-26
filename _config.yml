@@ -1,5 +1,5 @@
 name: Paul Fitzpatrick
 markdown: kramdown
-pygments: true
+highlighter: pygments
 description: Paul Fitzpatrick
 url: http://paulfitz.github.io

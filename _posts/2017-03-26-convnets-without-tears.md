@@ -2,7 +2,7 @@
 title: detecting a pattern with a convolutional network and no data
 ---
 
-Imagine a buddy asks if you can write a program to detect a simple
+Imagine a buddy asks you to write a program to detect a simple
 visual pattern in a video stream.
 They plan to print out the pattern, hang it on the wall in a gallery,
 then replace it digitally with artworks to see how they'll look in the
@@ -25,22 +25,24 @@ perspective, and so on, until finally running out of time
 and just telling your buddy all the limitations of your detector.
 And sometimes that would be OK, sometimes not.
 
-Things are different now.  Here's how I'd tackle this problem today.
+Things are different now.  Here's how I'd tackle this problem today,
+with convnets.
 
 
 First question: can I get labelled data?
 ----------------------------------------
 
 This means, can I get examples of inputs and the corresponding desired
-outputs?  In large quantities?  If I can get enough
-examples, a neural network will stand a good shot at learning what I
+outputs?  In large quantities?  Convnets are thirsty for training data.
+If I can get enough
+examples, they stand a good shot at learning what I
 used to program, and better.
 
 I can certainly take pictures and videos of me walking around putting
 this pattern in different places, but I'd have to label where the
 pattern is in each frame, which would be a pain.  I might be able to
 do a dozen or so examples, but not thousands or millions.  That's not
-something I'd do for this alleged "buddy." You'd have to pay me, and
+something I'd do for this alleged "buddy."  You'd have to pay me, and
 even then I'd just take your money and pay someone else to do it.
 
 Second question: can I generate labelled data?
@@ -49,12 +51,12 @@ Second question: can I generate labelled data?
 Can I write a program to generate examples of the pattern in different
 scenes?  Sure, that is easy enough.
 
-Relevance is the snag here.  So I write a quick program to photoshop
+Relevance is the snag here.  Say I write a quick program to "photoshop"
 the pattern in anywhere and everywhere over a large set of scenes.
 The distribution of such
 pictures will in general be sampled from a very different space to real
-pictures.  So we'll the teaching the network one thing in class and then
-giving it a final exam on another thing.
+pictures.  So we'll be teaching the network one thing in class and then
+giving it a final exam on something entirely different.
 
 There are a few cases where this can work out anyway.  If we can make
 the example space we select from varied enough that, along the dimensions
@@ -62,17 +64,18 @@ relevant to the problem, the real distribution is contained within it,
 then we can win.
 
 Sounds like a real stretch, but it'll save hand-labelling data so let's
-just go for it!  For example we might generate input/output pairs like this:
+just go for it!  For this problem, we might generate input/output pairs like this:
 
 {: .scale-image}
 ![some generated samples](/images/pattern/samples.jpg)
 
-Here's how these works of art were created:
+Here's how these particular works of art were created:
 
  * Grab a few million random images from anywhere to use as backgrounds.
    This is a crude simulation of different scenes.
    In fact I got really lazy here and just used pictures of dogs and cats
    I happened to have lying around.  I should have included more variety.
+   [pixplz](https://github.com/paulfitz/pixplz) is handy for this.
  * Shade the pattern with random gradients.
    This is a crude simulation of lighting effects.
  * Overlay the pattern on a background, with a random affine transformation.
@@ -95,12 +98,9 @@ Here's how these works of art were created:
 
 The precise details aren't important,
 the key is to leave nothing reliable except the pattern you want learned.
-
-To classic computer vision eyes, this looks crazy.  There's occlusion!
+To classic computer vision eyes, this all looks crazy.  There's occlusion!
 Sometimes the pattern is only partially in view!  Sometimes its edges are
-all smeared out!  Relax about that.  The question to worry about is whether
-a network that learns this can generalize to real images.
-
+all smeared out!  Relax about that.
 Here's a hacked together network that should be able to do this.  Let's
 assume we get images at 256x256 resolution for now.
 

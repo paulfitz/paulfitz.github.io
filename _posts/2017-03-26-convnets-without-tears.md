@@ -163,3 +163,9 @@ the job at hand.
 
 One very easy way to improve this a lot would be to work at higher resolutions
 than 256x256 :-)
+
+Code
+----
+
+There's a somewhat cleaned up version of this code at
+[github.com/paulfitz/segmenty](https://github.com/paulfitz/segmenty)

@@ -17,7 +17,7 @@ will show up in `vi` (or `emacs`, or `nano`) in csv format.
 Any edits you make will be applied back to the original source.
 
 {: .scale-image}
-![editing an SQL database with vi](/images/visql.gif)
+![editing a SQL database with vi](/images/visql.gif)
 
 This works fine on large tables.  Just specify a filter for the part
 of the table you want to work on.  Only that part will be requested and shown.

@@ -4,7 +4,7 @@
 html, body { 
   margin: 0;
   padding: 0;
-  background: white;
+  background: white !important;
   line-height: 1.5em;
   letter-spacing: 0px;
   height: 100%;

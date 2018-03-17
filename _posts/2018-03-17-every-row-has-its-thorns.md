@@ -5,36 +5,36 @@ title: Every row has its thorns
 
 <table width="100%">
 <tr>
-<td><h2>CSV</h2><textarea id="table_csv" class="ctable" wrap="off" autocorrect="off" spellcheck="false"></textarea></td>
-<td><h2>&THORN;SV</h2><textarea id="table_thorn" class="ctable" wrap="off" autocorrect="off" spellcheck="false"></textarea></td>
+<td><h2>CSV</h2><textarea id="th_table_csv" class="ctable" wrap="off" autocorrect="off" spellcheck="false"></textarea></td>
+<td><h2>&THORN;SV</h2><textarea id="th_table_thorn" class="ctable" wrap="off" autocorrect="off" spellcheck="false"></textarea></td>
 </tr>
 </table>
 
 <script>
 $.mobile.ignoreContentEnabled=true;
 $(function() {
-  var txt = "IDEA,VALUE,IMPLEMENTED\nsave earth,high,no\nfight tyranny,high,no\nþ-separated-value converter,low,HECK YES\n";
+  var txt = "IDEA,IMPLEMENTED\nsave earth,no\nfight tyranny,no\nþ-separated-value converter,HECK YES\n";
 
   var delim = String.fromCharCode(0xFE);
   var csv_thorn = new daff.Csv(delim);
   var csv = new daff.Csv();
   var update = true;
-  $('#table_thorn').keyup(function() {
+  $('#th_table_thorn').keyup(function() {
      if (update) {
        update = false;
-       $('#table_csv').val(csv.renderTable(csv_thorn.makeTable($('#table_thorn').val())));
+       $('#th_table_csv').val(csv.renderTable(csv_thorn.makeTable($('#th_table_thorn').val())));
        update = true;
      }
   });
-  $('#table_csv').keyup(function() {
+  $('#th_table_csv').keyup(function() {
      if (update) {
        update = false;
-       $('#table_thorn').val(csv_thorn.renderTable(csv.makeTable($('#table_csv').val())));
+       $('#th_table_thorn').val(csv_thorn.renderTable(csv.makeTable($('#th_table_csv').val())));
        update = true;
      }
   });
-  $('#table_csv').val(txt);
-  $('#table_csv').trigger('keyup');
+  $('#th_table_csv').val(txt);
+  $('#th_table_csv').trigger('keyup');
   $('#table_thorn').trigger('keyup');
 });
 </script>

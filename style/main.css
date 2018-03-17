@@ -380,4 +380,5 @@ div.post {
 .ctable {
   overflow: scroll;
   white-space: pre;
+  min-height: 150px !important;
 }

@@ -5,8 +5,8 @@ title: the year of poop on the desktop
 
 <table width="100%">
 <tr>
-<td><h2>CSV</h2><textarea id="table_csv" class="ctable" wrap="off"></textarea></td>
-<td><h2>PSV</h2><textarea id="table_poop" class="ctable" wrap="off"></textarea></td>
+<td><h2>CSV</h2><textarea id="table_csv" class="ctable" wrap="off" autocorrect="off" spellcheck="false"></textarea></td>
+<td><h2>PSV</h2><textarea id="table_poop" class="ctable" wrap="off" autocorrect="off" spellcheck="false"></textarea></td>
 </tr>
 </table>
 

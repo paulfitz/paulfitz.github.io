@@ -11,7 +11,6 @@ title: Every row has its thorns
 </table>
 
 <script>
-$.mobile.ignoreContentEnabled=true;
 $(function() {
   var txt = "IDEA,IMPLEMENTED\nsave earth,no\nfight tyranny,no\nþ-separated-value converter,HECK YES\n";
 

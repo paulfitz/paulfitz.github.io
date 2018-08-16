@@ -381,4 +381,5 @@ div.post {
   overflow: scroll;
   white-space: pre;
   min-height: 150px !important;
+  width: 100%;
 }

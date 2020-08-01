@@ -282,7 +282,7 @@ p.figure, p.scale-image {
 }
 
 p.figure img, p.max-image img, p.scale-image img {
-  box-shadow: 5px 5px 2px #888;
+  box-shadow: -1px -1px 1px #eee, 5px 5px 2px #888;
 }
 
 p.fig509 img { 
@@ -336,10 +336,11 @@ p.scale-image img {
 }
 
 pre { 
-  background: #cfc;
-  padding: 10px;
-  border-radius: 10px;
-  overflow: auto;
+    background: #000;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: auto;
 }
 
 ul ul li { 

@@ -2,3 +2,5 @@ name: Paul Fitzpatrick
 markdown: kramdown
 description: Paul Fitzpatrick
 url: http://paulfitz.github.io
+plugins:
+  - jekyll-sitemap
